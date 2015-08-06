@@ -1,0 +1,2 @@
+# Simple-Wands
+Intermediate sorcery
