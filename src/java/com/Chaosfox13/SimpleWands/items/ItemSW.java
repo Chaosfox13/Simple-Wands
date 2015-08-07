@@ -1,5 +1,7 @@
 package com.Chaosfox13.SimpleWands.items;
 
+import com.Chaosfox13.SimpleWands.SimpleWands;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -10,6 +12,6 @@ public class ItemSW extends Item
 		super();
 		
 	    this.setUnlocalizedName(unlocalizedName);
-	    this.setCreativeTab(CreativeTabs.tabMaterials);
+	    this.setCreativeTab(SimpleWands.tabSimpleWands);
 	}
 }

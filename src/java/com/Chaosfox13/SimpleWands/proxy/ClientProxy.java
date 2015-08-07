@@ -1,5 +1,6 @@
 package com.Chaosfox13.SimpleWands.proxy;
 
+import com.Chaosfox13.SimpleWands.client.render.blocks.BlockRenderRegister;
 import com.Chaosfox13.SimpleWands.client.render.items.ItemRenderRegister;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -17,7 +18,7 @@ public class ClientProxy extends CommonProxy
 	    public void init(FMLInitializationEvent e) {
 	        super.init(e);
 	        ItemRenderRegister.registerItemRenderer(); 
-	        System.out.println("Is this the real life?");
+	        BlockRenderRegister.registerBlockRenders();
 	    }
 
 	    @Override

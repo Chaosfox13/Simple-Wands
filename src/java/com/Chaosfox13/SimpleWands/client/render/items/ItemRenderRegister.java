@@ -11,10 +11,11 @@ public class ItemRenderRegister
 {
     public static void registerItemRenderer() 
     {
-    	//reg(SWItems.magicDust);
+    	reg(SWItems.magicDust);
+    	reg(SWItems.magicStick);
     	// Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(SWItems.magicDust, 0, new ModelResourceLocation("SimpleWands:magicDust", "inventory"));
-    	ModelResourceLocation res = new ModelResourceLocation("SimpleWands:magic_dust", "inventory");
-    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(SWItems.magicDust, 0, res);
+    	//ModelResourceLocation res = new ModelResourceLocation("SimpleWands:magic_dust", "inventory");
+    	//Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(SWItems.magicDust, 0, res);
     }
     public static void reg(Item item)
     {

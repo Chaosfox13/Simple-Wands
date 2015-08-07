@@ -1,0 +1,5 @@
+package com.Chaosfox13.SimpleWands.client.render.blocks;
+
+public class BlockRenderRegister {
+
+}

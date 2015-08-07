@@ -1,0 +1,10 @@
+package com.Chaosfox13.SimpleWands.blocks;
+import com.Chaosfox13.SimpleWands.blocks.BlockSW;
+public class SWBlocks 
+{
+	public BlockSW etherOre;
+	public static void createBlocks()
+	{
+		
+	}
+}

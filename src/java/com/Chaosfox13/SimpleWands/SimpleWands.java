@@ -1,10 +1,12 @@
 package com.Chaosfox13.SimpleWands;
 
 import com.Chaosfox13.SimpleWands.client.render.items.ItemRenderRegister;
+import com.Chaosfox13.SimpleWands.creativeTab.Tab;
 import com.Chaosfox13.SimpleWands.items.SWItems;
 import com.Chaosfox13.SimpleWands.proxy.CommonProxy;
 import com.Chaosfox13.SimpleWands.reference.Reference;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -19,6 +21,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class SimpleWands
 {
+	public static CreativeTabs tabSimpleWands= new Tab(CreativeTabs.getNextID(), "SimpleWands");
 	@Instance
 	public static SimpleWands instance= new SimpleWands();
 	

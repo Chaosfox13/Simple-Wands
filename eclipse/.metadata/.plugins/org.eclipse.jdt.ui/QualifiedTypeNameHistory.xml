@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLPreInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLInitializationEvent"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLPostInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.SidedProxy"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.proxy.CommonProxy"/>
-<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLPreInitializationEvent"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLPostInitializationEvent"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.proxy.ClientProxy"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.client.render.items.ItemRegisterRender"/>
-<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.reference.Reference"/>
-<fullyQualifiedTypeName name="net.minecraft.client.resources.model.ModelResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.creativeTab.Tab"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.client.render.blocks.BlockRenderRegister"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.resources.model.ModelResourceLocation"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.reference.Reference"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.blocks.SWBlocks"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.SimpleWands"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.crafting.SWCrafting"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.items.SWItems"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
 </qualifiedTypeNameHistroy>
