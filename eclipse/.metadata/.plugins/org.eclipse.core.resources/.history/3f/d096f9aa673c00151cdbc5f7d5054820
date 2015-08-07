@@ -1,0 +1,6 @@
+package com.Chaosfox13.SimpleWands.proxy;
+
+public class ClientProxy extends CommonProxy
+{
+
+}

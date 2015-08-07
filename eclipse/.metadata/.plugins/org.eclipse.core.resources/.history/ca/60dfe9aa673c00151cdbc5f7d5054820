@@ -1,0 +1,19 @@
+package com.Chaosfox13.SimpleWands;
+
+import net.minecraft.init.Blocks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import com.Chaosfox13.SimpleWands.reference.Reference;
+
+@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION)
+
+
+public class SimpleWands
+{
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+		
+    }
+}

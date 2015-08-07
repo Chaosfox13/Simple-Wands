@@ -1,0 +1,40 @@
+package com.Chaosfox13.SimpleWands;
+
+import net.minecraft.init.Blocks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+
+import com.Chaosfox13.SimpleWands.items.SWItems;
+import com.Chaosfox13.SimpleWands.proxy.CommonProxy;
+import com.Chaosfox13.SimpleWands.reference.Reference;
+
+@Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION)
+
+
+public class SimpleWands
+{
+	@Instance
+	public static SimpleWands instance= new SimpleWands();
+	
+	@SidedProxy(clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS, modId= Reference.MOD_ID)
+	public static CommonProxy proxy;
+	
+    @EventHandler
+    public void preInit(FMLInitializationEvent event)
+    {
+    	SWItems.createItems();
+    }
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+		
+    }
+    @EventHandler
+    public void postInit(FMLInitializationEvent event)
+    {
+		
+    }
+}

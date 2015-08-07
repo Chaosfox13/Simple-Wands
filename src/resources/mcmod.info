@@ -1,0 +1,16 @@
+[
+{
+  "modid": "SimpleWands",
+  "name": "Simple Wands",
+  "description": "Intermediate sorcery!",
+  "version": "0.2",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Ry'nard Littlefox"],
+  "credits": "The Forge and FML guys, for making this example, Pahimar for his fantastic tutorial series",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

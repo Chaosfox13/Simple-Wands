@@ -1,0 +1,9 @@
+package com.Chaosfox13.SimpleWands.client.render.items;
+
+public class ItemRegisterRender 
+{
+    public static void RegisterItemRender() 
+    {
+    	
+    }
+}

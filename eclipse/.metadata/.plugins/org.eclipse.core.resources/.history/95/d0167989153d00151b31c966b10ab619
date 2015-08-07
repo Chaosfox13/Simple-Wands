@@ -1,0 +1,6 @@
+{
+    "parent":"SimpleWands:item/itemSW",
+    "textures": {
+        "layer0":"SimpleWands:items/magic_dust"
+    }
+}
