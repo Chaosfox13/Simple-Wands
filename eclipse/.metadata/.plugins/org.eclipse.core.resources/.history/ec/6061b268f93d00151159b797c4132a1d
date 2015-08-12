@@ -1,0 +1,17 @@
+package com.Chaosfox13.SimpleWands.blocks;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+
+public class OreSW extends BlockSW {
+	private Item drop;
+	private int meta;
+	private int least_quantity;
+	private int most_quantity;
+	public OreSW(String unlocalizedName, Material material, float hardness, float resistance, Item item, int meta, int least, int most) 
+	{
+		super(unlocalizedName, material, hardness, resistance);
+		// TODO Auto-generated constructor stub
+	}
+
+}

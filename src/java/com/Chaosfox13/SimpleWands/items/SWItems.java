@@ -5,12 +5,14 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public final class SWItems
 {
-	public static Item magicDust;
-	public static Item  magicStick;
+	public static ItemSW magicDust= new ItemMagicDust("magic_dust");
+	public static Item magicStick= new ItemMagicStick("magic_stick");
+	public static Item ciboreum= new ItemCiboreum("ciboreum");
 	
 	public static void createItems() 
 	{
-		GameRegistry.registerItem(magicDust = new ItemSW("magic_dust"), "magic_dust");
-		GameRegistry.registerItem(magicStick = new ItemSW("magic_stick"), "magic_stick");
+		GameRegistry.registerItem(magicDust, "magic_dust");
+		GameRegistry.registerItem(magicStick, "magic_stick");
+		GameRegistry.registerItem(ciboreum , "ciboreum");
     }
 }

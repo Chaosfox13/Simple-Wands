@@ -11,15 +11,19 @@
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.creativeTab.Tab"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.client.render.blocks.BlockRenderRegister"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="net.minecraft.client.resources.model.ModelResourceLocation"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.reference.Reference"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.blocks.SWBlocks"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.SimpleWands"/>
 <fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.crafting.SWCrafting"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
-<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.items.SWItems"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="com.Chaosfox13.SimpleWands.items.SWItems"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumParticleTypes"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,18 @@
+package com.Chaosfox13.SimpleWands.items;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public final class SWItems
+{
+	public static ItemSW magicDust= new ItemMagicDust("magic_dust");
+	public static Item magicStick;
+	public static Item ciboreum;
+	
+	public static void createItems() 
+	{
+		GameRegistry.registerItem(magicDust, "magic_dust");
+		GameRegistry.registerItem(magicStick = new ItemSW("magic_stick"), "magic_stick");
+		GameRegistry.registerItem(ciboreum = new ItemSW("ciboreum"), "ciboreum");
+    }
+}

@@ -1,0 +1,39 @@
+package com.Chaosfox13.SimpleWands.items;
+
+import java.util.Random;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.world.World;
+
+public class ItemCiboreum extends ItemSW {
+	protected int maxStackSize=1;
+    private int maxDamage;
+	public ItemCiboreum(String unlocalizedName) 
+	{
+		super(unlocalizedName);
+		this.setMaxDamage(1000);
+		
+	}
+	public void onCreated(ItemStack stack, World world, EntityPlayer player)
+	{
+		this.setDamage(stack, 0);
+	}
+	public ItemStack onItemRightClick(ItemStack stack, World worldIn, EntityPlayer playerIn)
+	{
+		int currentContent=this.getDamage(stack);
+		  if(playerIn.inventory.hasItem(SWItems.magicDust)&&this.getMaxDamage()<1000 )
+		{
+			playerIn.inventory.consumeInventoryItem(Items.arrow);
+			this.setDamage(stack, ++currentContent);
+		}
+
+		return stack;
+		
+	}
+
+}

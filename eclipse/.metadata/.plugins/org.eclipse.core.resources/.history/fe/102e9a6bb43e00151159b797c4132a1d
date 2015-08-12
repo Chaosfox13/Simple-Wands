@@ -1,0 +1,11 @@
+package com.Chaosfox13.SimpleWands.items;
+
+public class ItemMagicDust extends ItemSW {
+
+	public ItemMagicDust(String unlocalizedName) 
+	{
+		super(unlocalizedName);
+		
+	}
+
+}
