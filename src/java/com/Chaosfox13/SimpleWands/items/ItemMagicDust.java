@@ -23,24 +23,23 @@ public class ItemMagicDust extends ItemSW {
             --stack.stackSize;
             
         }
-		if (!worldIn.isRemote)
-		{
-			double posX = playerIn.posX;
-			double posY = playerIn.posY;
-			double posZ = playerIn.posZ;
-		    double motionX = itemRand.nextGaussian() * 0.02D;
-		    double motionY = itemRand.nextGaussian() * 0.02D;
-		    double motionZ = itemRand.nextGaussian() * 0.02D;
-		    
-		    worldIn.spawnParticle(
-		          EnumParticleTypes.VILLAGER_HAPPY, 
-		          posX, //+ rand.nextFloat() * 2.0F - 1.0F, 
-		          posY, // + 0.5D + rand.nextFloat()*2.0F, 
-		          posZ, // + rand.nextFloat()* 2.0F - 1.0F, 
-		          0, 
-		          0,
-		          0);
-		}
+
+		 if (worldIn != null)
+	        {
+	            double posX = playerIn.posX;
+	            double posY = playerIn.posY+1;
+	            double posZ = playerIn.posZ;
+	            float f = 1.0F;
+	            float f1 = f * 0.6F + 0.4F;
+	            float f2 = f * f * 0.7F - 0.5F;
+	            float f3 = f * f * 0.6F - 0.7F;
+
+	            for (int l = 0; l < 8; ++l)
+	            {
+	                worldIn.spawnParticle(EnumParticleTypes.VILLAGER_HAPPY, posX + Math.random() - Math.random(), posY + Math.random() - Math.random(), posZ + Math.random() - Math.random(), f1, f2, f3);
+	            }
+	        }
+
 
 		return stack;
 		
