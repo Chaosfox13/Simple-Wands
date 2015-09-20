@@ -1,21 +1,10 @@
-/bin/
-## gradle
-/.gradle
-/build
-/gradle
-/gradlew
-/gradlew.bat
 
-## ForgeGradle
-/run
-
-
-
-
-## intellij
-/out
-/.idea
-/*.iml
-/*.ipr
-/*.iws
-/atlassian-ide-plugin.xml
+    $ cat .gitignore
+    /*
+    !/src
+    !build.gradle
+    !*.project
+    !/gradle
+    !gradlew
+    !gradlew.bat
+l
