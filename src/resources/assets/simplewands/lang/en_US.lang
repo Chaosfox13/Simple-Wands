@@ -1,5 +1,6 @@
 item.magic_dust.name=Magic Dust
 item.magic_stick.name= Magic Stick
 item.ciboreum.name= Ciboreum
+item.fire_wand.name= Wand of Fire
 tile.ether_ore.name=Etherial Ore
 itemGroup.SimpleWands.name= Simple Wands

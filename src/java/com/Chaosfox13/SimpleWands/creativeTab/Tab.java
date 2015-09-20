@@ -15,7 +15,7 @@ public class Tab extends CreativeTabs
 
 	@Override
 	public Item getTabIconItem() {
-		return SWItems.magicDust;
+		return SWItems.ciboreum;
 	}
 	
 }

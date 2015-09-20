@@ -14,10 +14,9 @@ public class ItemRenderRegister
     	reg(SWItems.magicDust);
     	reg(SWItems.magicStick);
     	reg(SWItems.ciboreum);
-    	// Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(SWItems.magicDust, 0, new ModelResourceLocation("SimpleWands:magicDust", "inventory"));
-    	//ModelResourceLocation res = new ModelResourceLocation("SimpleWands:magic_dust", "inventory");
-    	//Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(SWItems.magicDust, 0, res);
-    }
+    	reg(SWItems.fireWand);
+    	
+  }
     public static void reg(Item item)
     {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()

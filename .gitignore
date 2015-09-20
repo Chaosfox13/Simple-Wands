@@ -9,13 +9,8 @@
 ## ForgeGradle
 /run
 
-## eclipse
-/eclipse
-/.settings
-/.metadata
-/.classpath
-/.project
-/bin
+
+
 
 ## intellij
 /out

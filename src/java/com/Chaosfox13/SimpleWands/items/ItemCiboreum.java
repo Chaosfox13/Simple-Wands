@@ -26,11 +26,7 @@ public class ItemCiboreum extends ItemSW {
 		this.DEFAULT_TARGET_ITEM = new ItemStack(SWItems.magicDust, 1, 0);
 		
 	}
-	/*public void onCreated(ItemStack stack, World world, EntityPlayer player)
-	{
-		this.setDamage(stack, 0);
-	}
-	*/
+	
 	protected void updateItemDamage(ItemStack item) 
 	{
 		int capacity = getCapacity(item);
@@ -43,14 +39,11 @@ public class ItemCiboreum extends ItemSW {
 		return getShort("capacity",item);
 	}
 	public void addInformation(ItemStack ist, EntityPlayer player, List infoList, boolean par4) {
-		NBTTagCompound tag = ist.getTagCompound();
-		if (tag == null) return;
-		String capacity = "Capacity: ";
-		capacity += getCapacity(ist);
-		String holding = "Holding: ";
-		holding += getQuantity(ist);
-		infoList.add(capacity);
-		infoList.add(holding);
+		infoList.add("Total Storage:"+getCapacity(ist)+"dU");
+		infoList.add("Storing:"+getQuantity(ist)+"dU");
+		if (isActive(ist)) {
+			infoList.add("Active");
+		}
 	}
 	protected void setCapacity(ItemStack ist, int i) {
 		setShort("capacity", ist, (short)i);
@@ -58,7 +51,7 @@ public class ItemCiboreum extends ItemSW {
 	}
 	public int getQuantity(ItemStack item)
 	{
-		return getShort("quantity",item);
+		return getShort("itemQuantity",item);
 	}
 	public void setQuantity(ItemStack ist, int i) {
 		setShort("itemQuantity", ist, (short)i);
@@ -99,6 +92,7 @@ public class ItemCiboreum extends ItemSW {
 		if (!isInitialized(ist)) {
 			initialize(ist, DEFAULT_TARGET_ITEM);
 		}
+		updateItemDamage(ist);
 		if (world.isRemote) return;
 		EntityPlayer player = null;
 		if (e instanceof EntityPlayer) {
@@ -119,7 +113,6 @@ public class ItemCiboreum extends ItemSW {
 	}
 	protected void initialize(ItemStack ist, ItemStack target) {
 		setCapacity(ist, 1000);
-		setQuantity(ist, 0);
 		setBoolean("initialized", ist, true);
 	}
 	protected void setIsActive(ItemStack ist, boolean b) {
